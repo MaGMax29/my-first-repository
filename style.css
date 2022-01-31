@@ -11,10 +11,11 @@ body{
 
 }
 .body {
-    background-image: url(./images/Background.png);
+    background-image: url(./images/hand.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+   /*  background-attachment: fixed; */
+    background-size:contain;
+    background-position: right;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
@@ -23,10 +24,10 @@ body{
 header {
     background-color: rgb(0, 0, 0);
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     position: relative;
     z-index: 6;
 }
@@ -38,13 +39,27 @@ main {
 }
 
 .navbar {
-    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 100px;
+    justify-content: space-between;
+    margin-left: 200px;
+    
+    
 }
 
+.navbar-items{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    padding-top: 100px;
+    padding-right: 300px;
+}
 .navbar ul li {
-    display: inline-block;
+    display: inline;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     margin-left: 20px;
     font-style: italic;
     font-weight: bold;
@@ -62,10 +77,10 @@ a{
 a:hover{
     text-decoration: underline;
     scroll-behavior: smooth;
-    color:red;
+    color: purple;
 }
 .logo {
-
+    margin-top: 50px;
     display: inline-block;
     align-items: center;
     color: white;
@@ -73,7 +88,9 @@ a:hover{
 }
 
 .logo h1{
-    margin-left: 120px;
+  
+    border: solid 1px white;
+    padding-left: 50px;
 }
 
 .container {
