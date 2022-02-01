@@ -11,10 +11,10 @@ body{
 
 }
 .body {
-    background-image: url(./images/hand.png);
+    background-image: url(./images/My\ Photos.png);
     background-repeat: no-repeat;
    /*  background-attachment: fixed; */
-    background-size:contain;
+    background-size:cover;
     background-position: right;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -32,12 +32,12 @@ header {
     z-index: 6;
 }
 
-main {
+/* main {
     
     justify-content: center;
     align-items: center;
 }
-
+ */
 .navbar {
     display: flex;
     flex-direction: row;
@@ -45,8 +45,7 @@ main {
     padding-bottom: 100px;
     justify-content: space-between;
     margin-left: 200px;
-    
-    
+
 }
 
 .navbar-items{
@@ -68,16 +67,18 @@ main {
 
 a{
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-decoration: none;
     color: white;
+    font-size: 20px;
 }
 
 a:hover{
     text-decoration: underline;
     scroll-behavior: smooth;
-    color: purple;
+    color: rgb(237, 240, 51);
+    transition: 2s;
 }
 .logo {
     margin-top: 50px;
@@ -88,11 +89,19 @@ a:hover{
 }
 
 .logo h1{
-  
+
     border: solid 1px white;
-    padding-left: 50px;
 }
 
+.paragrah__home{
+    display: flex;
+}
+.paragraph__1{
+
+    display:flex;
+    justify-content: center;
+    
+}
 .container {
     border: solid 1px grey;
     border-radius: 20px;
@@ -119,7 +128,6 @@ a:hover{
 
 .mainPic {
     display:flex;
-    background-image: image(background);
     width: 100%;
     height: 1000px;
     object-fit:fill;
@@ -171,13 +179,6 @@ a:hover{
 
 }
 
-
-.negrita {
-    color: rgb(99, 97, 97);
-    font-style: italic;
-    font-weight: bold;
-}
-
 .container__footer{
 
     display:grid;
@@ -221,13 +222,14 @@ h6{
     
 }
 
-video{
-
-    display: inline;
-    height: 300px;
-    margin:15px;
-    margin-top:90px;
+.video{
+    width:250px;
+    margin-top: 80px;
+    margin-left: 50px;
+    padding-bottom: 100px;
+    border-radius: 60%;
 }
+
 .paragraph {
     display: inline-block;
     text-align: justify;
